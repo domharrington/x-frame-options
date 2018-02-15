@@ -26,9 +26,8 @@ See more here: [https://developer.mozilla.org/en-US/docs/HTTP/X-Frame-Options](h
 ## Usage
 ``` js
   var xFrameOptions = require('x-frame-options')
+  var middleware = xFrameOptions(headerValue = 'Deny')
 ```
-
-### var middleware = xFrameOptions(headerValue = 'Deny')
 
 Returns an express middleware function. Allows you to specify the value of the header, defaults to 'Deny' for the strongest protection.
 
